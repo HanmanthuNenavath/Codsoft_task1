@@ -1,0 +1,162 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    background: url('https://images.pexels.com/photos/616401/pexels-photo-616401.jpeg') no-repeat center center/cover;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: center;
+}
+
+/* Header Styles */
+header {
+    background-color: #6de6a0;
+    color: #0e0d0d;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #131212;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+/* Hero Section */
+#hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    position: relative;
+    z-index: 1;
+}
+
+#hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Overlay for better text readability */
+    z-index: -1;
+}
+
+.hero-content {
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    background-color: #f39c12;
+    padding: 1rem 2rem;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #e67e22;
+}
+
+/* Menu Section */
+#menu {
+    padding: 4rem 0;
+    background-color: #fff;
+}
+
+.menu-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.menu-item {
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.menu-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+/* About Section */
+#about {
+    padding: 4rem 0;
+    background-color: #ffffff;
+}
+
+/* Contact Section */
+#contact {
+    padding: 2rem 0;
+    background-color: #fff;
+}
+
+.cta-button {
+    background-color: #6dda9a;
+    padding: 1rem 1rem;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #b4cc2e;
+}
+
+/* Footer */
+footer {
+    background-color: #67dc98;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
